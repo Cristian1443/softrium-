@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css'; // Importamos los estilos del módulo
+import teamImage from '../assets/logo_softrium.png';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,6 +30,7 @@ function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={`${styles.headerContainer} container`}>
         <Link to="/" className={styles.logo}>
+        <img src={teamImage} alt="Logo_softrium" className={styles.image} />
           <span className={styles.logoText}>Softrium</span>
         </Link>
         

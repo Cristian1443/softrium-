@@ -24,11 +24,22 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  display: flex; /* Asegura que la imagen y el texto estén en línea */
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
   text-decoration: none;
   z-index: 100;
+  /* Elimina cualquier padding o margin que pueda estar separando demasiado */
 }
+
+.image {
+  /* Estilos para la imagen del logo */
+  height: auto; /* Ajusta la altura de la imagen. Puedes usar un valor fijo o max-height */
+  width: 30%; /* Mantiene la proporción de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el texto del logo */
+  /* Si el logo tiene un fondo, puedes considerar border-radius para suavizarlo */
+  /* border-radius: 5px; */
+}
+
 
 .logoText {
   font-size: 1.8rem;
@@ -37,7 +48,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  }
+  /* Asegúrate de que no haya margin que lo separe de la imagen */
+  margin: 0;
+}
   
   .nav {
     display: flex;
@@ -281,3 +294,14 @@
     justify-content: center;
   }
   }
+
+  @media (max-width: 768px) {
+  .image {
+    height: 30px; /* Reduce el tamaño del logo en móviles */
+    margin-right: 8px;
+  }
+
+  .logoText {
+    font-size: 1.5rem; /* Reduce el tamaño del texto en móviles */
+  }
+}
