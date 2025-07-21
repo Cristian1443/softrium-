@@ -34,7 +34,7 @@
 .image {
   /* Estilos para la imagen del logo */
   height: auto; /* Ajusta la altura de la imagen. Puedes usar un valor fijo o max-height */
-  width: 30%; /* Mantiene la proporción de la imagen */
+  width: 35%; /* Mantiene la proporción de la imagen */
   margin-right: 10px; /* Espacio entre la imagen y el texto del logo */
   /* Si el logo tiene un fondo, puedes considerar border-radius para suavizarlo */
   /* border-radius: 5px; */
